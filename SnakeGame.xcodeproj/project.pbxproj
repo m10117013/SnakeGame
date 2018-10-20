@@ -7,43 +7,243 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A28F2F6365472BA3D3B13236 /* libPods-SnakeGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A88B5C5020403EF1F0623FBB /* libPods-SnakeGameTests.a */; };
+		AC58C15E4BA5027F1F903539 /* libPods-SnakeGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C26845B1862437D21CE795D /* libPods-SnakeGame.a */; };
+		B602847B217A48BE004A7BE1 /* SpaceAreaTester.m in Sources */ = {isa = PBXBuildFile; fileRef = B602847A217A48BE004A7BE1 /* SpaceAreaTester.m */; };
+		B6028485217AF393004A7BE1 /* SnakeGameMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6028484217AF393004A7BE1 /* SnakeGameMenuView.m */; };
+		B6028486217B039B004A7BE1 /* SpaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6088CA02176FB0A00E5ED7A /* SpaceItem.m */; };
+		B6028487217B039B004A7BE1 /* SGSpaceContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AE621789D3D00238846 /* SGSpaceContext.m */; };
+		B6028488217B039B004A7BE1 /* SGPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AD421783BE600238846 /* SGPoint.m */; };
+		B6028489217B039B004A7BE1 /* SGSize.m in Sources */ = {isa = PBXBuildFile; fileRef = B60467862179E7E200FC7EF4 /* SGSize.m */; };
+		B602848A217B03EB004A7BE1 /* SnakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079ABE2178318E00238846 /* SnakeModel.m */; };
+		B60467842179C40800FC7EF4 /* ScoreBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60467832179C40800FC7EF4 /* ScoreBoardView.m */; };
+		B60467872179E7E200FC7EF4 /* SGSize.m in Sources */ = {isa = PBXBuildFile; fileRef = B60467862179E7E200FC7EF4 /* SGSize.m */; };
+		B6079AB8217775DA00238846 /* SnakeGameBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AB7217775DA00238846 /* SnakeGameBoardView.m */; };
+		B6079ABC2177968400238846 /* FakeBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079ABB2177968400238846 /* FakeBlock.m */; };
+		B6079ABF2178318E00238846 /* SnakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079ABE2178318E00238846 /* SnakeModel.m */; };
+		B6079AC92178336800238846 /* SnakeGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AC82178336800238846 /* SnakeGameTests.m */; };
+		B6079AD22178339400238846 /* SnakeModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AD12178339400238846 /* SnakeModelTest.m */; };
+		B6079AD521783BE600238846 /* SGPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AD421783BE600238846 /* SGPoint.m */; };
+		B6079AD8217843AC00238846 /* SnakeModel+Drawable.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AD7217843AC00238846 /* SnakeModel+Drawable.m */; };
+		B6079ADB21784A6D00238846 /* FruitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079ADA21784A6D00238846 /* FruitModel.m */; };
+		B6079ADE21784B1D00238846 /* FruitModel+Drawable.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079ADD21784B1D00238846 /* FruitModel+Drawable.m */; };
+		B6079AE12178871F00238846 /* SinglePlayerSnakeGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AE02178871F00238846 /* SinglePlayerSnakeGameViewController.m */; };
+		B6079AE421789BA200238846 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AE321789BA200238846 /* UIColor+HexString.m */; };
+		B6079AE721789D3D00238846 /* SGSpaceContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079AE621789D3D00238846 /* SGSpaceContext.m */; };
 		B6088C872176FA4800E5ED7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6088C862176FA4800E5ED7A /* AppDelegate.m */; };
-		B6088C8A2176FA4800E5ED7A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6088C892176FA4800E5ED7A /* ViewController.m */; };
 		B6088C8D2176FA4800E5ED7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6088C8B2176FA4800E5ED7A /* Main.storyboard */; };
 		B6088C8F2176FA4E00E5ED7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6088C8E2176FA4E00E5ED7A /* Assets.xcassets */; };
 		B6088C922176FA4E00E5ED7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6088C902176FA4E00E5ED7A /* LaunchScreen.storyboard */; };
 		B6088C952176FA4E00E5ED7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6088C942176FA4E00E5ED7A /* main.m */; };
+		B6088CA12176FB0A00E5ED7A /* SpaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6088CA02176FB0A00E5ED7A /* SpaceItem.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B6079ACB2178336800238846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6088C7A2176FA4800E5ED7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6088C812176FA4800E5ED7A;
+			remoteInfo = SnakeGame;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		14810FC2E3500642AFF2C1D6 /* Pods-SnakeGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGame/Pods-SnakeGame.debug.xcconfig"; sourceTree = "<group>"; };
+		4D46ECE77366496F06883FB3 /* Pods-SnakeGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGameTests/Pods-SnakeGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63904162981EC4E9444E68F8 /* Pods-SnakeGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGame/Pods-SnakeGame.release.xcconfig"; sourceTree = "<group>"; };
+		6C26845B1862437D21CE795D /* libPods-SnakeGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnakeGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88B5C5020403EF1F0623FBB /* libPods-SnakeGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnakeGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B602847A217A48BE004A7BE1 /* SpaceAreaTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceAreaTester.m; sourceTree = "<group>"; };
+		B6028483217AF393004A7BE1 /* SnakeGameMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeGameMenuView.h; sourceTree = "<group>"; };
+		B6028484217AF393004A7BE1 /* SnakeGameMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeGameMenuView.m; sourceTree = "<group>"; };
+		B60467822179C40800FC7EF4 /* ScoreBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreBoardView.h; sourceTree = "<group>"; };
+		B60467832179C40800FC7EF4 /* ScoreBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreBoardView.m; sourceTree = "<group>"; };
+		B60467852179E7E200FC7EF4 /* SGSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGSize.h; sourceTree = "<group>"; };
+		B60467862179E7E200FC7EF4 /* SGSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGSize.m; sourceTree = "<group>"; };
+		B6079AB32177756900238846 /* SGDrawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGDrawable.h; sourceTree = "<group>"; };
+		B6079AB6217775DA00238846 /* SnakeGameBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeGameBoardView.h; sourceTree = "<group>"; };
+		B6079AB7217775DA00238846 /* SnakeGameBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeGameBoardView.m; sourceTree = "<group>"; };
+		B6079ABA2177968400238846 /* FakeBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeBlock.h; sourceTree = "<group>"; };
+		B6079ABB2177968400238846 /* FakeBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeBlock.m; sourceTree = "<group>"; };
+		B6079ABD2178318E00238846 /* SnakeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeModel.h; sourceTree = "<group>"; };
+		B6079ABE2178318E00238846 /* SnakeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeModel.m; sourceTree = "<group>"; };
+		B6079AC62178336800238846 /* SnakeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6079AC82178336800238846 /* SnakeGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeGameTests.m; sourceTree = "<group>"; };
+		B6079ACA2178336800238846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6079AD12178339400238846 /* SnakeModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeModelTest.m; sourceTree = "<group>"; };
+		B6079AD321783BE600238846 /* SGPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGPoint.h; sourceTree = "<group>"; };
+		B6079AD421783BE600238846 /* SGPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGPoint.m; sourceTree = "<group>"; };
+		B6079AD6217843AC00238846 /* SnakeModel+Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnakeModel+Drawable.h"; sourceTree = "<group>"; };
+		B6079AD7217843AC00238846 /* SnakeModel+Drawable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SnakeModel+Drawable.m"; sourceTree = "<group>"; };
+		B6079AD921784A6D00238846 /* FruitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FruitModel.h; sourceTree = "<group>"; };
+		B6079ADA21784A6D00238846 /* FruitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FruitModel.m; sourceTree = "<group>"; };
+		B6079ADC21784B1D00238846 /* FruitModel+Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FruitModel+Drawable.h"; sourceTree = "<group>"; };
+		B6079ADD21784B1D00238846 /* FruitModel+Drawable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FruitModel+Drawable.m"; sourceTree = "<group>"; };
+		B6079ADF2178871F00238846 /* SinglePlayerSnakeGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinglePlayerSnakeGameViewController.h; sourceTree = "<group>"; };
+		B6079AE02178871F00238846 /* SinglePlayerSnakeGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinglePlayerSnakeGameViewController.m; sourceTree = "<group>"; };
+		B6079AE221789BA200238846 /* UIColor+HexString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		B6079AE321789BA200238846 /* UIColor+HexString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		B6079AE521789D3D00238846 /* SGSpaceContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGSpaceContext.h; sourceTree = "<group>"; };
+		B6079AE621789D3D00238846 /* SGSpaceContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGSpaceContext.m; sourceTree = "<group>"; };
 		B6088C822176FA4800E5ED7A /* SnakeGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6088C852176FA4800E5ED7A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6088C862176FA4800E5ED7A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B6088C882176FA4800E5ED7A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B6088C892176FA4800E5ED7A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B6088C8C2176FA4800E5ED7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6088C8E2176FA4E00E5ED7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6088C912176FA4E00E5ED7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6088C932176FA4E00E5ED7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6088C942176FA4E00E5ED7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6088C9F2176FB0A00E5ED7A /* SpaceItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceItem.h; sourceTree = "<group>"; };
+		B6088CA02176FB0A00E5ED7A /* SpaceItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceItem.m; sourceTree = "<group>"; };
+		EAC064DD9B6B36EE3B0FF077 /* Pods-SnakeGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGameTests/Pods-SnakeGameTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6079AC32178336800238846 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A28F2F6365472BA3D3B13236 /* libPods-SnakeGameTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6088C7F2176FA4800E5ED7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC58C15E4BA5027F1F903539 /* libPods-SnakeGame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166D6E462E50DF7999E1FDB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14810FC2E3500642AFF2C1D6 /* Pods-SnakeGame.debug.xcconfig */,
+				63904162981EC4E9444E68F8 /* Pods-SnakeGame.release.xcconfig */,
+				4D46ECE77366496F06883FB3 /* Pods-SnakeGameTests.debug.xcconfig */,
+				EAC064DD9B6B36EE3B0FF077 /* Pods-SnakeGameTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4CF4A9F976103B14A3026668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C26845B1862437D21CE795D /* libPods-SnakeGame.a */,
+				A88B5C5020403EF1F0623FBB /* libPods-SnakeGameTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6028479217A48A9004A7BE1 /* SpaceAreaTesters */ = {
+			isa = PBXGroup;
+			children = (
+				B602847A217A48BE004A7BE1 /* SpaceAreaTester.m */,
+			);
+			path = SpaceAreaTesters;
+			sourceTree = "<group>";
+		};
+		B602847D217AE555004A7BE1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B6028482217AF142004A7BE1 /* Category */,
+				B602847E217AE55D004A7BE1 /* Model */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B602847E217AE55D004A7BE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6088C9F2176FB0A00E5ED7A /* SpaceItem.h */,
+				B6088CA02176FB0A00E5ED7A /* SpaceItem.m */,
+				B6079AB32177756900238846 /* SGDrawable.h */,
+				B6079AE521789D3D00238846 /* SGSpaceContext.h */,
+				B6079AE621789D3D00238846 /* SGSpaceContext.m */,
+				B6079AD321783BE600238846 /* SGPoint.h */,
+				B6079AD421783BE600238846 /* SGPoint.m */,
+				B60467852179E7E200FC7EF4 /* SGSize.h */,
+				B60467862179E7E200FC7EF4 /* SGSize.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B602847F217AE590004A7BE1 /* SnakeGame */ = {
+			isa = PBXGroup;
+			children = (
+				B6088C9D2176FA6800E5ED7A /* Controllers */,
+				B6088C9C2176FA5E00E5ED7A /* Model */,
+				B6088C9B2176FA5400E5ED7A /* View */,
+			);
+			path = SnakeGame;
+			sourceTree = "<group>";
+		};
+		B6028480217AE5B2004A7BE1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6088C902176FA4E00E5ED7A /* LaunchScreen.storyboard */,
+				B6088C8B2176FA4800E5ED7A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6028481217AE5D6004A7BE1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B6088C8E2176FA4E00E5ED7A /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B6028482217AF142004A7BE1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B6079AE221789BA200238846 /* UIColor+HexString.h */,
+				B6079AE321789BA200238846 /* UIColor+HexString.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B6079AB921778F0B00238846 /* FakeItem */ = {
+			isa = PBXGroup;
+			children = (
+				B6079ABA2177968400238846 /* FakeBlock.h */,
+				B6079ABB2177968400238846 /* FakeBlock.m */,
+			);
+			path = FakeItem;
+			sourceTree = "<group>";
+		};
+		B6079AC72178336800238846 /* SnakeGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6028479217A48A9004A7BE1 /* SpaceAreaTesters */,
+				B6079AD02178337800238846 /* SnakeModelTesters */,
+				B6079AC82178336800238846 /* SnakeGameTests.m */,
+				B6079ACA2178336800238846 /* Info.plist */,
+			);
+			path = SnakeGameTests;
+			sourceTree = "<group>";
+		};
+		B6079AD02178337800238846 /* SnakeModelTesters */ = {
+			isa = PBXGroup;
+			children = (
+				B6079AD12178339400238846 /* SnakeModelTest.m */,
+			);
+			path = SnakeModelTesters;
+			sourceTree = "<group>";
+		};
 		B6088C792176FA4800E5ED7A = {
 			isa = PBXGroup;
 			children = (
 				B6088C842176FA4800E5ED7A /* SnakeGame */,
+				B6079AC72178336800238846 /* SnakeGameTests */,
 				B6088C832176FA4800E5ED7A /* Products */,
+				166D6E462E50DF7999E1FDB9 /* Pods */,
+				4CF4A9F976103B14A3026668 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				B6088C822176FA4800E5ED7A /* SnakeGame.app */,
+				B6079AC62178336800238846 /* SnakeGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,26 +259,83 @@
 		B6088C842176FA4800E5ED7A /* SnakeGame */ = {
 			isa = PBXGroup;
 			children = (
+				B6028481217AE5D6004A7BE1 /* Resource */,
+				B6028480217AE5B2004A7BE1 /* View */,
+				B602847F217AE590004A7BE1 /* SnakeGame */,
+				B602847D217AE555004A7BE1 /* Base */,
 				B6088C852176FA4800E5ED7A /* AppDelegate.h */,
 				B6088C862176FA4800E5ED7A /* AppDelegate.m */,
-				B6088C882176FA4800E5ED7A /* ViewController.h */,
-				B6088C892176FA4800E5ED7A /* ViewController.m */,
-				B6088C8B2176FA4800E5ED7A /* Main.storyboard */,
-				B6088C8E2176FA4E00E5ED7A /* Assets.xcassets */,
-				B6088C902176FA4E00E5ED7A /* LaunchScreen.storyboard */,
 				B6088C932176FA4E00E5ED7A /* Info.plist */,
 				B6088C942176FA4E00E5ED7A /* main.m */,
 			);
 			path = SnakeGame;
 			sourceTree = "<group>";
 		};
+		B6088C9B2176FA5400E5ED7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6079AB6217775DA00238846 /* SnakeGameBoardView.h */,
+				B6079AB7217775DA00238846 /* SnakeGameBoardView.m */,
+				B60467822179C40800FC7EF4 /* ScoreBoardView.h */,
+				B60467832179C40800FC7EF4 /* ScoreBoardView.m */,
+				B6028483217AF393004A7BE1 /* SnakeGameMenuView.h */,
+				B6028484217AF393004A7BE1 /* SnakeGameMenuView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6088C9C2176FA5E00E5ED7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6079AB921778F0B00238846 /* FakeItem */,
+				B6079ABD2178318E00238846 /* SnakeModel.h */,
+				B6079ABE2178318E00238846 /* SnakeModel.m */,
+				B6079AD6217843AC00238846 /* SnakeModel+Drawable.h */,
+				B6079AD7217843AC00238846 /* SnakeModel+Drawable.m */,
+				B6079AD921784A6D00238846 /* FruitModel.h */,
+				B6079ADA21784A6D00238846 /* FruitModel.m */,
+				B6079ADC21784B1D00238846 /* FruitModel+Drawable.h */,
+				B6079ADD21784B1D00238846 /* FruitModel+Drawable.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6088C9D2176FA6800E5ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6079ADF2178871F00238846 /* SinglePlayerSnakeGameViewController.h */,
+				B6079AE02178871F00238846 /* SinglePlayerSnakeGameViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B6079AC52178336800238846 /* SnakeGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6079ACD2178336800238846 /* Build configuration list for PBXNativeTarget "SnakeGameTests" */;
+			buildPhases = (
+				5CCCCFC238895E2FF69A7B75 /* [CP] Check Pods Manifest.lock */,
+				B6079AC22178336800238846 /* Sources */,
+				B6079AC32178336800238846 /* Frameworks */,
+				B6079AC42178336800238846 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6079ACC2178336800238846 /* PBXTargetDependency */,
+			);
+			name = SnakeGameTests;
+			productName = SnakeGameTests;
+			productReference = B6079AC62178336800238846 /* SnakeGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B6088C812176FA4800E5ED7A /* SnakeGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6088C982176FA4E00E5ED7A /* Build configuration list for PBXNativeTarget "SnakeGame" */;
 			buildPhases = (
+				C6F45D695903BF6E85BFF642 /* [CP] Check Pods Manifest.lock */,
 				B6088C7E2176FA4800E5ED7A /* Sources */,
 				B6088C7F2176FA4800E5ED7A /* Frameworks */,
 				B6088C802176FA4800E5ED7A /* Resources */,
@@ -100,6 +358,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = wei;
 				TargetAttributes = {
+					B6079AC52178336800238846 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					B6088C812176FA4800E5ED7A = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -119,11 +380,19 @@
 			projectRoot = "";
 			targets = (
 				B6088C812176FA4800E5ED7A /* SnakeGame */,
+				B6079AC52178336800238846 /* SnakeGameTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B6079AC42178336800238846 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6088C802176FA4800E5ED7A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,18 +405,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5CCCCFC238895E2FF69A7B75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnakeGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6F45D695903BF6E85BFF642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnakeGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B6079AC22178336800238846 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6028488217B039B004A7BE1 /* SGPoint.m in Sources */,
+				B6028489217B039B004A7BE1 /* SGSize.m in Sources */,
+				B602848A217B03EB004A7BE1 /* SnakeModel.m in Sources */,
+				B6079AD22178339400238846 /* SnakeModelTest.m in Sources */,
+				B6028486217B039B004A7BE1 /* SpaceItem.m in Sources */,
+				B6079AC92178336800238846 /* SnakeGameTests.m in Sources */,
+				B602847B217A48BE004A7BE1 /* SpaceAreaTester.m in Sources */,
+				B6028487217B039B004A7BE1 /* SGSpaceContext.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6088C7E2176FA4800E5ED7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6088C8A2176FA4800E5ED7A /* ViewController.m in Sources */,
+				B6079ABC2177968400238846 /* FakeBlock.m in Sources */,
+				B6079AD8217843AC00238846 /* SnakeModel+Drawable.m in Sources */,
+				B60467842179C40800FC7EF4 /* ScoreBoardView.m in Sources */,
+				B6079AD521783BE600238846 /* SGPoint.m in Sources */,
+				B6088CA12176FB0A00E5ED7A /* SpaceItem.m in Sources */,
+				B6079AB8217775DA00238846 /* SnakeGameBoardView.m in Sources */,
+				B6079ABF2178318E00238846 /* SnakeModel.m in Sources */,
 				B6088C952176FA4E00E5ED7A /* main.m in Sources */,
+				B6079ADE21784B1D00238846 /* FruitModel+Drawable.m in Sources */,
+				B6079ADB21784A6D00238846 /* FruitModel.m in Sources */,
+				B6028485217AF393004A7BE1 /* SnakeGameMenuView.m in Sources */,
+				B6079AE12178871F00238846 /* SinglePlayerSnakeGameViewController.m in Sources */,
+				B60467872179E7E200FC7EF4 /* SGSize.m in Sources */,
+				B6079AE721789D3D00238846 /* SGSpaceContext.m in Sources */,
 				B6088C872176FA4800E5ED7A /* AppDelegate.m in Sources */,
+				B6079AE421789BA200238846 /* UIColor+HexString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6079ACC2178336800238846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6088C812176FA4800E5ED7A /* SnakeGame */;
+			targetProxy = B6079ACB2178336800238846 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B6088C8B2176FA4800E5ED7A /* Main.storyboard */ = {
@@ -169,6 +521,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B6079ACE2178336800238846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D46ECE77366496F06883FB3 /* Pods-SnakeGameTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SnakeGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.wei.snake.test.SnakeGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6079ACF2178336800238846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAC064DD9B6B36EE3B0FF077 /* Pods-SnakeGameTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SnakeGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tw.wei.snake.test.SnakeGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B6088C962176FA4E00E5ED7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -220,7 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +661,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,9 +671,11 @@
 		};
 		B6088C992176FA4E00E5ED7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14810FC2E3500642AFF2C1D6 /* Pods-SnakeGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SnakeGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +689,11 @@
 		};
 		B6088C9A2176FA4E00E5ED7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63904162981EC4E9444E68F8 /* Pods-SnakeGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SnakeGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,6 +708,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B6079ACD2178336800238846 /* Build configuration list for PBXNativeTarget "SnakeGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6079ACE2178336800238846 /* Debug */,
+				B6079ACF2178336800238846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B6088C7D2176FA4800E5ED7A /* Build configuration list for PBXProject "SnakeGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

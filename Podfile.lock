@@ -1,0 +1,24 @@
+PODS:
+  - Expecta (1.0.6)
+  - Masonry (1.1.0)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - Expecta (~> 1.0)
+  - Masonry
+  - Specta (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Expecta
+    - Masonry
+    - Specta
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: b04c22763749d3c99f6f117768e192696ef80006
+
+COCOAPODS: 1.5.3
