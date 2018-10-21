@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SGDrawable.h"
-#import "SpaceItem.h"
+#import "SGSpaceItem.h"
 
-@interface FakeBlock : SpaceItem <SGDrawable>
+@interface FakeBlock : SGSpaceItem <SGDrawable>
 
 @end
 

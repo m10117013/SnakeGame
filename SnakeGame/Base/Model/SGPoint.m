@@ -41,5 +41,9 @@
     return [NSString stringWithFormat:@"SGPoint x:%ld y:%ld", self.x , self.y];
 }
 
+- (NSUInteger)hash {
+    return [NSString stringWithFormat:@"%ld%ld",self.x,self.y].integerValue;
+}
+
 @end
 

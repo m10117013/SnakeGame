@@ -20,7 +20,7 @@
 }
 
 - (BOOL)isOverBound:(SGPoint*)point {
-    return (point.x < 0) | (point.x > self.width) | (point.y < 0) | (point.y > self.height);
+    return (point.x < 0) | (point.x >= self.width) | (point.y < 0) | (point.y >= self.height);
 }
 
 @end

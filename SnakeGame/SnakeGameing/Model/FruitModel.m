@@ -13,7 +13,7 @@
 - (instancetype)initWithLocation:(SGPoint *)location {
     self = [super init];
     if (self) {
-        self.item = [[SpaceItem alloc] initWithLocation:location];
+        self.item = [[SGSpaceItem alloc] initWithLocation:location];
     }
     return self;
 }

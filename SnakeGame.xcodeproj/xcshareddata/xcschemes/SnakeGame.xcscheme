@@ -32,9 +32,9 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B6079AC52178336800238846"
-            BuildableName = "SnakeGameTests.xctest"
-            BlueprintName = "SnakeGameTests"
+            BlueprintIdentifier = "B6088C812176FA4800E5ED7A"
+            BuildableName = "SnakeGame.app"
+            BlueprintName = "SnakeGame"
             ReferencedContainer = "container:SnakeGame.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>

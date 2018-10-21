@@ -6,9 +6,9 @@
 //  Copyright © 2018 wei. All rights reserved.
 //
 
-#import "SpaceItem.h"
+#import "SGSpaceItem.h"
 
-@implementation SpaceItem
+@implementation SGSpaceItem
 
 - (instancetype)initWithLocation: (SGPoint*)location {
     self = [super init];
@@ -19,7 +19,7 @@
 }
 
 - (id)copyWithZone:(NSZone *)zone {
-    SpaceItem *item = [[[self class] allocWithZone:zone] init];
+    SGSpaceItem *item = [[[self class] allocWithZone:zone] init];
     item.location = [self.location copy];
     return item;
 }

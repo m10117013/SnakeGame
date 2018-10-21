@@ -12,7 +12,7 @@
 /**
  This model use for minimal space in lattice.
  */
-@interface SpaceItem : NSObject
+@interface SGSpaceItem : NSObject
 
 /**
  The position in lattice.

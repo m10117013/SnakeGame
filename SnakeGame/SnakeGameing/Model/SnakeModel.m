@@ -7,13 +7,13 @@
 //
 
 #import "SnakeModel.h"
-#import "SpaceItem.h"
+#import "SGSpaceItem.h"
 
 @interface SnakeModel()
 
 @property (assign, nonatomic) BOOL isCrashOnBody;
 
-@property (copy, nonatomic) SpaceItem *tailShade;
+@property (copy, nonatomic) SGSpaceItem *tailShade;
 
 @end
 
@@ -30,7 +30,7 @@
         self.snakeDirection = direction;
         self.bodyItems = [NSMutableArray new];
         //firstBlock
-        [self.bodyItems addObject:[[SpaceItem alloc] initWithLocation:point]];
+        [self.bodyItems addObject:[[SGSpaceItem alloc] initWithLocation:point]];
     }
     return self;
 }
@@ -44,7 +44,7 @@
     return 0;
 }
 
-- (SpaceItem *)snakeHead {
+- (SGSpaceItem *)snakeHead {
     if (self.bodyItems && self.bodyItems.count > 0) {
         return [self.bodyItems.lastObject copy];
     }
@@ -52,7 +52,7 @@
 }
 
 - (void)moveToNextStep {
-    SpaceItem *newHead = [self snakeHead];
+    SGSpaceItem *newHead = [self snakeHead];
     switch (self.snakeDirection) {
         case SnakeDirectionLeft:
             newHead.location.x -= 1;
@@ -72,7 +72,7 @@
     }
     
     __weak typeof(self) weakSelf = self;
-    [self.bodyItems enumerateObjectsUsingBlock:^(SpaceItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.bodyItems enumerateObjectsUsingBlock:^(SGSpaceItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.location isEqual:newHead.location]) {
             *stop = true;
             weakSelf.isCrashOnBody = true;
@@ -94,7 +94,7 @@
 
 - (BOOL)isCrashOnSnakeBody {
     __block BOOL returnVal = NO;
-    [self.bodyItems enumerateObjectsUsingBlock:^(SpaceItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.bodyItems enumerateObjectsUsingBlock:^(SGSpaceItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if (obj != self.bodyItems.lastObject) {
             if ([obj.location isEqual:self.bodyItems.lastObject.location]) {
                 returnVal = YES;
@@ -105,13 +105,13 @@
 }
 
 - (BOOL)isHeadOnPoint:(SGPoint *)location {
-    SpaceItem* item = self.bodyItems.lastObject;
+    SGSpaceItem* item = self.bodyItems.lastObject;
     return [item.location isEqual:location];
 }
 
 - (BOOL)isPointOnSnake:(SGPoint *)location {
     __block BOOL returnVal = NO;
-    [self.bodyItems enumerateObjectsUsingBlock:^(SpaceItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.bodyItems enumerateObjectsUsingBlock:^(SGSpaceItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.location isEqual:location]) {
             returnVal = YES;
         }

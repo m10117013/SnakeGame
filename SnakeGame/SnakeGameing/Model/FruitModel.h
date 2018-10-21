@@ -7,15 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SpaceItem.h"
+#import "SGSpaceItem.h"
 
 @interface FruitModel : NSObject
 
-@property (strong, nonatomic) SpaceItem* item;
+@property (strong, nonatomic) SGSpaceItem* item;
 
 @property (readonly, nonatomic) NSInteger score;
 
 - (instancetype)initWithLocation:(SGPoint *)location;
-
 
 @end

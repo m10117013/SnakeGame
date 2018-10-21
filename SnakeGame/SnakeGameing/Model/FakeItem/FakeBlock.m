@@ -15,10 +15,10 @@
     
     CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
     
-    CGContextSetLineWidth(context, spaceArea.preBlock);
+    CGContextSetLineWidth(context, spaceArea.squareWidth);
 
-    CGPoint point = [spaceArea transferSGPointToAeraPlotPoint: self.location];
-    CGContextMoveToPoint(context, point.x + spaceArea.preBlock / 2, point.y);
-    CGContextAddLineToPoint(context, point.x + spaceArea.preBlock / 2, point.y + spaceArea.preBlock);
+    CGPoint point = [spaceArea transferSGPointToFramePoint: self.location];
+    CGContextMoveToPoint(context, point.x + spaceArea.squareWidth / 2, point.y);
+    CGContextAddLineToPoint(context, point.x + spaceArea.squareWidth / 2, point.y + spaceArea.squareWidth);
 }
 @end

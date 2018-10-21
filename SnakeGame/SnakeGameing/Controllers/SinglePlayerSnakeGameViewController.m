@@ -8,7 +8,7 @@
 
 #import <Masonry/Masonry.h>
 #import "SinglePlayerSnakeGameViewController.h"
-#import "SpaceItem.h"
+#import "SGSpaceItem.h"
 #import "SnakeGameBoardView.h"
 #import "SnakeGameMenuView.h"
 #import "ScoreBoardView.h"
@@ -18,9 +18,14 @@
 #import "SnakeModel+Drawable.h"
 #import "FruitModel+Drawable.h"
 
-const NSInteger kDefaultGameBoardWidth = 30;
-const NSInteger kDefaultGameBoardHeight = 60;
-const CGFloat kDefaultTimer = 0.1;
+//// default game plot width
+const NSInteger kDefaultGameBoardWidth = 10;
+/// default game plot height
+const NSInteger kDefaultGameBoardHeight = 10;
+/// default game timer
+const CGFloat kDefaultTimer = 0.3;
+
+const BOOL kFullScreen = true;
 
 @interface SinglePlayerSnakeGameViewController () <SnakeGameMenuViewDelegate, SnakeGameBoardViewDelegate,SnakeGameBoardViewDataSource , ScoreBoardViewDelegate>
 
@@ -44,6 +49,9 @@ const CGFloat kDefaultTimer = 0.1;
 @property (strong, nonatomic) FruitModel *fruit;
 
 
+/**
+ To prevent snake double turn in one step
+ */
 @property (assign, nonatomic) BOOL lockStep;
 
 /**
@@ -85,7 +93,15 @@ const CGFloat kDefaultTimer = 0.1;
 
 - (SGSpaceContext *)spaceContext {
     if (!_spaceContext) {
-        SGSpaceContext* space = [[SGSpaceContext alloc] initWithCGSize:self.view.bounds.size SGize:[[SGSize alloc] initWithWidth:kDefaultGameBoardWidth AndHeight:kDefaultGameBoardHeight]];
+        SGSpaceContext* space;
+        if (kFullScreen) {
+        CGFloat w = self.view.bounds.size.width / 10;
+        CGFloat h = self.view.bounds.size.height / 10;
+            space = [[SGSpaceContext alloc] initWithFrameSize:self.view.bounds.size SGize:[[SGSize alloc] initWithWidth:w AndHeight:h]];
+        
+        } else {
+            space = [[SGSpaceContext alloc] initWithFrameSize:self.view.bounds.size SGize:[[SGSize alloc] initWithWidth:kDefaultGameBoardWidth AndHeight:kDefaultGameBoardHeight]];
+        }
         _spaceContext = space;
     }
     return _spaceContext;
@@ -140,22 +156,38 @@ const CGFloat kDefaultTimer = 0.1;
 #pragma mark -
 
 - (void)setupViews {
+    __weak typeof(self) weakSelf = self;
     [self.view addSubview:self.snakeGameView];
-    self.snakeGameView.frame = self.view.bounds;
+    [self.snakeGameView mas_makeConstraints:^(MASConstraintMaker *make) {
+        if (@available(iOS 11.0, *)) {
+            make.top.equalTo(weakSelf.view.mas_safeAreaLayoutGuideTop);
+            make.bottom.equalTo(weakSelf.view.mas_safeAreaLayoutGuideBottom);
+            make.left.equalTo(weakSelf.view.mas_safeAreaLayoutGuideLeft);
+            make.right.equalTo(weakSelf.view.mas_safeAreaLayoutGuideRight);
+        } else {
+            make.top.equalTo(weakSelf);
+            make.bottom.equalTo(weakSelf);
+            make.left.equalTo(weakSelf);
+            make.right.equalTo(weakSelf);
+        }
+        
+    }];
 }
 
-
+///start game
 - (void)startGame {
     if (_gameTimer.isValid)
         [_gameTimer invalidate];
     
-     self.score = 0;
-     self.fruit = [[FruitModel alloc] initWithLocation:[[SGPoint alloc] initWithX:10 AndY:10]];
-    _gameTimer = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)kDefaultTimer target:self selector:@selector(move) userInfo:nil repeats:YES];
+    self.snake = [[SnakeModel alloc] initWithSGPoint: [[SGPoint alloc]initWithX:0 AndY:0] andDirecetion:SnakeDirectionRight];
+    self.score = 0;
+    self.fruit = [self allocateNewFruitModel];
+    _gameTimer = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)kDefaultTimer target:self selector:@selector(moveOneStep) userInfo:nil repeats:YES];
     [_gameTimer fire];
 }
 
-- (void)move {
+///move one step
+- (void)moveOneStep {
     //moveNextStep
     [self.snake moveToNextStep];
     if ([self.snake isHeadOnPoint:self.fruit.item.location]) {
@@ -171,21 +203,36 @@ const CGFloat kDefaultTimer = 0.1;
         [self gameOver];
     }
     
+    self.lockStep = false;
     [self.snakeGameView refreshViews];
 }
 
-
+// random allocate fruit in game
 - (FruitModel *)allocateNewFruitModel {
     FruitModel *foodModel;
+    
+    NSInteger blockCount = self.spaceContext.plotSize.width * self.spaceContext.plotSize.height;
+    NSMutableSet<SGPoint*> *usedSet = [[NSMutableSet alloc] init] ;
     BOOL notfound = YES;
     while (notfound) {
-        int valueX = arc4random() % (self.snakeGameView.spaceContext.plotSize.width + 1);
-        int valueY = arc4random() % (self.snakeGameView.spaceContext.plotSize.height + 1);
+        int valueX = arc4random() % (self.spaceContext.plotSize.width);
+        int valueY = arc4random() % (self.spaceContext.plotSize.height);
         SGPoint *point = [[SGPoint alloc] initWithX:valueX AndY:valueY];
+        
+        if ([usedSet containsObject:point])
+            continue;
+        
         if (![self.snake isPointOnSnake:point] && ![point isEqual:self.fruit.item.location]) {
             foodModel = [[FruitModel alloc] initWithLocation:point];
             notfound = NO;
         }
+        
+        [usedSet addObject:point];
+        if (usedSet.count == blockCount) {
+             notfound = NO;
+            [self gameOver];
+        }
+        
     }
     return foodModel;
 }
@@ -231,6 +278,12 @@ const CGFloat kDefaultTimer = 0.1;
 #pragma mark - SnakeGameBoard delegate
 
 - (void)onSnakeGameBoardView:(SnakeGameBoardView *)view didPanningWithDirction: (UIPanGestureRecognizerDirection)direction {
+    
+    if (self.lockStep) {
+        //snake havn't move yet, reject action
+        return;
+    }
+    
     SnakeDirection newDirection = SnakeDirectionLeft;
     switch (direction) {
         case UIPanGestureRecognizerDirectionLeft:
@@ -256,6 +309,9 @@ const CGFloat kDefaultTimer = 0.1;
         ) {
         return;
     }
+    
+    
+    self.lockStep = true;
     [self.snake setSnakeDirection:newDirection];
 }
 
@@ -274,7 +330,6 @@ const CGFloat kDefaultTimer = 0.1;
 //
 //        FakeBlock *fake3 = [[FakeBlock alloc] init];
 //        fake3.location = [[SGPoint alloc] initWithX:10 AndY:10];
-//
         return @[self.snake,self.fruit];
     }
     return nil;
@@ -285,8 +340,6 @@ const CGFloat kDefaultTimer = 0.1;
 #pragma mark - ScoreBoardView delegate
 
 - (void)onScoreBoardView:(ScoreBoardView *)scoreBoardView didClickRestartButton:(UIButton *)button {
-    self.snake = [[SnakeModel alloc] init];
-    _snake.snakeDirection = SnakeDirectionRight;
     [scoreBoardView removeFromSuperview];
     [self startGame];
 }

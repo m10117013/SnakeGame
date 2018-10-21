@@ -11,18 +11,48 @@
 
 @interface SGSpaceContext : NSObject
 
+/**
+ core graphics frame size
+ */
 @property (assign, nonatomic) CGSize viewSize;
 
+/**
+ game plot size
+ */
 @property (strong, nonatomic) SGSize *plotSize;
 
-@property (assign, nonatomic) NSInteger preBlock;
+/**
+ square width
+ */
+@property (assign, nonatomic) NSInteger squareWidth;
 
+/**
+ border Width
+ */
 @property (assign, nonatomic) CGFloat borderWidth;
 
+/**
+ border Height
+ */
 @property (assign, nonatomic) CGFloat borderHeight;
 
-- (instancetype)initWithCGSize:(CGSize)size SGize:(SGSize*)GameSize;
 
-- (CGPoint)transferSGPointToAeraPlotPoint: (SGPoint*)point;
+/**
+    init
+
+ @param size view's frame size
+ @param GameSize expects game size
+ @return SGSpaceContext
+ */
+- (instancetype)initWithFrameSize:(CGSize)size SGize:(SGSize*)GameSize;
+
+
+/**
+ Transfer game space point to CGPoint
+
+ @param point game point
+ @return cgpoint
+ */
+- (CGPoint)transferSGPointToFramePoint: (SGPoint*)point;
 
 @end

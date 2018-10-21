@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SGPoint.h"
-#import "SpaceItem.h"
+#import "SGSpaceItem.h"
 
 typedef enum : NSUInteger {
     SnakeDirectionLeft = 0,
@@ -25,7 +25,7 @@ typedef enum : NSUInteger {
 /**
  bodyItem
  */
-@property (strong, nonatomic) NSMutableArray<SpaceItem*>* bodyItems;
+@property (strong, nonatomic) NSMutableArray<SGSpaceItem*>* bodyItems;
 
 /**
  Length of snake's body
@@ -35,7 +35,7 @@ typedef enum : NSUInteger {
 /**
  snake head
  */
-@property (copy, readonly) SpaceItem *snakeHead;
+@property (copy, readonly) SGSpaceItem *snakeHead;
 
 /**
  Direction of snake

@@ -12,6 +12,7 @@
 
 SpecBegin(SnakeModelTest)
 
+///test snake model
 describe(@"Testing_SnakeModel", ^{
    
     it(@"test snake moveing", ^{
@@ -46,11 +47,11 @@ describe(@"Testing_SnakeModel", ^{
     });
     
     it(@"test snake crash on body", ^{
-        NSArray *snakeItems = @[[[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:1]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:1]]
+        NSArray *snakeItems = @[[[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:1]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:1]]
                                 ];
         SnakeModel *snake = [[SnakeModel alloc] init];
         snake.bodyItems = [snakeItems mutableCopy];
@@ -61,11 +62,11 @@ describe(@"Testing_SnakeModel", ^{
     
     
     it(@"test snake ate fodd", ^{
-        NSArray *snakeItems = @[[[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:4 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:5 AndY:0]]
+        NSArray *snakeItems = @[[[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:4 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:5 AndY:0]]
                                 ];
         SnakeModel *snake = [[SnakeModel alloc] init];
         snake.bodyItems = [snakeItems mutableCopy];
@@ -79,11 +80,11 @@ describe(@"Testing_SnakeModel", ^{
     
     
     it(@"test isHeadOnPoint", ^{
-        NSArray *snakeItems = @[[[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:4 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:5 AndY:0]]
+        NSArray *snakeItems = @[[[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:4 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:5 AndY:0]]
                                 ];
         SnakeModel *snake = [[SnakeModel alloc] init];
         snake.bodyItems = [snakeItems mutableCopy];
@@ -97,8 +98,8 @@ describe(@"Testing_SnakeModel", ^{
     
     
     it(@"test isPointOnSnake", ^{
-        NSArray *snakeItems = @[[[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
-                                [[SpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]]
+        NSArray *snakeItems = @[[[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
+                                [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]]
                                 ];
         SnakeModel *snake = [[SnakeModel alloc] init];
         snake.bodyItems = [snakeItems mutableCopy];
