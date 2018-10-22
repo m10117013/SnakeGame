@@ -165,10 +165,10 @@ const BOOL kFullScreen = true;
             make.left.equalTo(weakSelf.view.mas_safeAreaLayoutGuideLeft);
             make.right.equalTo(weakSelf.view.mas_safeAreaLayoutGuideRight);
         } else {
-            make.top.equalTo(weakSelf);
-            make.bottom.equalTo(weakSelf);
-            make.left.equalTo(weakSelf);
-            make.right.equalTo(weakSelf);
+            make.top.equalTo(weakSelf.view);
+            make.bottom.equalTo(weakSelf.view);
+            make.left.equalTo(weakSelf.view);
+            make.right.equalTo(weakSelf.view);
         }
         
     }];
