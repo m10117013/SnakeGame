@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SnakeGameBoardView.h"
 
 @interface SinglePlayerSnakeGameViewController : UIViewController
+
+/**
+ snake game view
+ */
+@property (strong, nonatomic) SnakeGameBoardView *snakeGameView;
+
+
+/**
+ space context
+ */
+@property (strong, nonatomic) SGSpaceContext *spaceContext;
 
 @end

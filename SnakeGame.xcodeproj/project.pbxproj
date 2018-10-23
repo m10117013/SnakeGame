@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BCCF03E217F162500E7623A /* MultiplePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCCF03D217F162500E7623A /* MultiplePlayerViewController.m */; };
+		8BCCF04F217F1BD800E7623A /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCCF04B217F1A6500E7623A /* SocketIO.framework */; };
+		8BCCF050217F1BD800E7623A /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCCF04B217F1A6500E7623A /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8BCCF051217F1BD800E7623A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCCF04C217F1A6500E7623A /* Starscream.framework */; };
+		8BCCF052217F1BD800E7623A /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCCF04C217F1A6500E7623A /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A28F2F6365472BA3D3B13236 /* libPods-SnakeGameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A88B5C5020403EF1F0623FBB /* libPods-SnakeGameTests.a */; };
 		AC58C15E4BA5027F1F903539 /* libPods-SnakeGame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C26845B1862437D21CE795D /* libPods-SnakeGame.a */; };
 		B602847B217A48BE004A7BE1 /* BaseGamePlotTester.m in Sources */ = {isa = PBXBuildFile; fileRef = B602847A217A48BE004A7BE1 /* BaseGamePlotTester.m */; };
@@ -49,11 +54,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8BCCF047217F19C400E7623A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8BCCF050217F1BD800E7623A /* SocketIO.framework in Embed Frameworks */,
+				8BCCF052217F1BD800E7623A /* Starscream.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		14810FC2E3500642AFF2C1D6 /* Pods-SnakeGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGame/Pods-SnakeGame.debug.xcconfig"; sourceTree = "<group>"; };
 		4D46ECE77366496F06883FB3 /* Pods-SnakeGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGameTests/Pods-SnakeGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63904162981EC4E9444E68F8 /* Pods-SnakeGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGame/Pods-SnakeGame.release.xcconfig"; sourceTree = "<group>"; };
 		6C26845B1862437D21CE795D /* libPods-SnakeGame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnakeGame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BCCF038217F15F000E7623A /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		8BCCF039217F15F000E7623A /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
+		8BCCF03C217F162500E7623A /* MultiplePlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiplePlayerViewController.h; sourceTree = "<group>"; };
+		8BCCF03D217F162500E7623A /* MultiplePlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplePlayerViewController.m; sourceTree = "<group>"; };
+		8BCCF04B217F1A6500E7623A /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
+		8BCCF04C217F1A6500E7623A /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		A88B5C5020403EF1F0623FBB /* libPods-SnakeGameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SnakeGameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B602847A217A48BE004A7BE1 /* BaseGamePlotTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseGamePlotTester.m; sourceTree = "<group>"; };
 		B6028483217AF393004A7BE1 /* SnakeGameMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeGameMenuView.h; sourceTree = "<group>"; };
@@ -114,6 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC58C15E4BA5027F1F903539 /* libPods-SnakeGame.a in Frameworks */,
+				8BCCF051217F1BD800E7623A /* Starscream.framework in Frameworks */,
+				8BCCF04F217F1BD800E7623A /* SocketIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +162,8 @@
 		4CF4A9F976103B14A3026668 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BCCF039217F15F000E7623A /* SocketIO.framework */,
+				8BCCF038217F15F000E7623A /* Starscream.framework */,
 				6C26845B1862437D21CE795D /* libPods-SnakeGame.a */,
 				A88B5C5020403EF1F0623FBB /* libPods-SnakeGameTests.a */,
 			);
@@ -240,6 +270,8 @@
 		B6088C792176FA4800E5ED7A = {
 			isa = PBXGroup;
 			children = (
+				8BCCF04B217F1A6500E7623A /* SocketIO.framework */,
+				8BCCF04C217F1A6500E7623A /* Starscream.framework */,
 				B6088C842176FA4800E5ED7A /* SnakeGame */,
 				B6079AC72178336800238846 /* SnakeGameTests */,
 				B6088C832176FA4800E5ED7A /* Products */,
@@ -306,6 +338,8 @@
 			children = (
 				B6079ADF2178871F00238846 /* SinglePlayerSnakeGameViewController.h */,
 				B6079AE02178871F00238846 /* SinglePlayerSnakeGameViewController.m */,
+				8BCCF03C217F162500E7623A /* MultiplePlayerViewController.h */,
+				8BCCF03D217F162500E7623A /* MultiplePlayerViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -348,6 +382,8 @@
 				B6088C7E2176FA4800E5ED7A /* Sources */,
 				B6088C7F2176FA4800E5ED7A /* Frameworks */,
 				B6088C802176FA4800E5ED7A /* Resources */,
+				8BCCF044217F185A00E7623A /* ShellScript */,
+				8BCCF047217F19C400E7623A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,6 +473,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8BCCF044217F185A00E7623A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SocketIO.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		C6F45D695903BF6E85BFF642 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,6 +543,7 @@
 				B6079AD521783BE600238846 /* SGPoint.m in Sources */,
 				B6088CA12176FB0A00E5ED7A /* SGSpaceItem.m in Sources */,
 				B6079AB8217775DA00238846 /* SnakeGameBoardView.m in Sources */,
+				8BCCF03E217F162500E7623A /* MultiplePlayerViewController.m in Sources */,
 				B6079ABF2178318E00238846 /* SnakeModel.m in Sources */,
 				B6088C952176FA4E00E5ED7A /* main.m in Sources */,
 				B6079ADE21784B1D00238846 /* FruitModel+Drawable.m in Sources */,
@@ -683,9 +739,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14810FC2E3500642AFF2C1D6 /* Pods-SnakeGame.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnakeGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -701,9 +762,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63904162981EC4E9444E68F8 /* Pods-SnakeGame.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnakeGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

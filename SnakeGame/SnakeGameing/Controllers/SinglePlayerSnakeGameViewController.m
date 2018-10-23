@@ -54,16 +54,9 @@ const BOOL kFullScreen = true;
  */
 @property (assign, nonatomic) BOOL lockStep;
 
-/**
- space context
- */
-@property (strong, nonatomic) SGSpaceContext *spaceContext;
 
 #pragma mark views
-/**
- snake game view
- */
-@property (strong, nonatomic) SnakeGameBoardView *snakeGameView;
+
 
 /**
  score view

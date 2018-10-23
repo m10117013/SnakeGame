@@ -4,14 +4,13 @@
 target 'SnakeGame' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
-
 	pod 'Masonry'
   # Pods for SnakeGame
 	
   target 'SnakeGameTests' do
     inherit! :search_paths
     # Pods for testing
-	 pod 'Specta', '~> 1.0'
+	   pod 'Specta', '~> 1.0'
     	 pod 'Expecta', '~> 1.0'
   end
 
