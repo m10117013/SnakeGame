@@ -56,6 +56,7 @@ static NSString* const kDefaultBorderBackguardColor = @"FFFFFF";
 
 - (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
+    [self.spaceContext setViewSize:rect.size];
     CGContextRef context = UIGraphicsGetCurrentContext();
     UIColor *borderColor = [UIColor colorWithHexString:kDefaultBorderBackguardColor];
     
