@@ -42,7 +42,10 @@
 }
 
 - (NSUInteger)hash {
-    return [NSString stringWithFormat:@"%ld%ld",self.x,self.y].integerValue;
+    //( y << 16 ) ^ x;
+    NSUInteger x = self.x;
+    NSUInteger y = self.y;
+    return (y << 16) ^ x;
 }
 
 @end
