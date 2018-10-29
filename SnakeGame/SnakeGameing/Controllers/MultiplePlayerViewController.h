@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SinglePlayerSnakeGameViewController.h"
+#import "SnakeGameMultiplePlayerMenuView.h"
 
 @interface MultiplePlayerViewController : SinglePlayerSnakeGameViewController
-
 
 
 @end

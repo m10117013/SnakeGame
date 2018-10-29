@@ -11,10 +11,6 @@
 
 @interface SnakeGameMenuView()
 
-/**
- start button
- */
-@property (strong, nonatomic) UIButton *startButton;
 
 
 @end

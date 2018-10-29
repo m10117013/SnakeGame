@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SnakeGameBoardView.h"
+#import "SnakeGameMenuView.h"
 
 @interface SinglePlayerSnakeGameViewController : UIViewController
 
@@ -16,10 +17,14 @@
  */
 @property (strong, nonatomic) SnakeGameBoardView *snakeGameView;
 
-
 /**
  space context
  */
 @property (strong, nonatomic) SGSpaceContext *spaceContext;
+
+/**
+ menu view
+ */
+@property (strong, nonatomic) SnakeGameMenuView *menuView;
 
 @end

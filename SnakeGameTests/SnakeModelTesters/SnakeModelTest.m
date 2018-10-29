@@ -61,7 +61,7 @@ describe(@"Testing_SnakeModel", ^{
     });
     
     
-    it(@"test snake ate fodd", ^{
+    it(@"test snake ate food", ^{
         NSArray *snakeItems = @[[[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:1 AndY:0]],
                                 [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:2 AndY:0]],
                                 [[SGSpaceItem alloc] initWithLocation:[[SGPoint alloc] initWithX:3 AndY:0]],

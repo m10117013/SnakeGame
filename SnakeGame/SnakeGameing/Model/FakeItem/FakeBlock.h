@@ -12,5 +12,7 @@
 
 @interface FakeBlock : SGSpaceItem <SGDrawable>
 
+@property (copy, nonatomic) UIColor *color;
+
 @end
 

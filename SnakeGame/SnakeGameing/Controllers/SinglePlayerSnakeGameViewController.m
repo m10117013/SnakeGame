@@ -19,13 +19,13 @@
 #import "FruitModel+Drawable.h"
 
 //// default game plot width
-const NSInteger kDefaultGameBoardWidth = 10;
+const NSInteger kDefaultGameBoardWidth = 20;
 /// default game plot height
-const NSInteger kDefaultGameBoardHeight = 10;
+const NSInteger kDefaultGameBoardHeight = 20;
 /// default game timer
 const CGFloat kDefaultTimer = 0.3;
 
-const BOOL kFullScreen = true;
+const BOOL kFullScreen = false;
 
 @interface SinglePlayerSnakeGameViewController () <SnakeGameMenuViewDelegate, SnakeGameBoardViewDelegate,SnakeGameBoardViewDataSource , ScoreBoardViewDelegate>
 
@@ -63,10 +63,7 @@ const BOOL kFullScreen = true;
  */
 @property (strong, nonatomic) ScoreBoardView *scoreBoardView;
 
-/**
- menu view
- */
-@property (strong, nonatomic) SnakeGameMenuView *menuView;
+
 
 @end
 
@@ -90,7 +87,7 @@ const BOOL kFullScreen = true;
         if (kFullScreen) {
         CGFloat w = self.view.bounds.size.width / 10;
         CGFloat h = self.view.bounds.size.height / 10;
-            space = [[SGSpaceContext alloc] initWithFrameSize:self.view.bounds.size SGize:[[SGSize alloc] initWithWidth:w AndHeight:h]];
+            space = [[SGSpaceContext alloc] initWithFrameSize:self.scoreBoardView.bounds.size SGize:[[SGSize alloc] initWithWidth:w AndHeight:h]];
         
         } else {
             space = [[SGSpaceContext alloc] initWithFrameSize:self.view.bounds.size SGize:[[SGSize alloc] initWithWidth:kDefaultGameBoardWidth AndHeight:kDefaultGameBoardHeight]];
@@ -163,7 +160,6 @@ const BOOL kFullScreen = true;
             make.left.equalTo(weakSelf.view);
             make.right.equalTo(weakSelf.view);
         }
-        
     }];
 }
 
@@ -312,17 +308,22 @@ const BOOL kFullScreen = true;
 
 - (NSArray<id<SGDrawable>> *)drawableItemsForView:(SnakeGameBoardView *)view {
     if (self.gameTimer.isValid) {
-//        FakeBlock *fake = [[FakeBlock alloc] init];
-//        fake.location = [[SGPoint alloc] initWithX:0 AndY:0];
-//
-//        FakeBlock *fake1 = [[FakeBlock alloc] init];
-//        fake1.location = [[SGPoint alloc] initWithX:0 AndY:10];
-//
-//        FakeBlock *fake2 = [[FakeBlock alloc] init];
-//        fake2.location = [[SGPoint alloc] initWithX:10 AndY:0];
-//
-//        FakeBlock *fake3 = [[FakeBlock alloc] init];
-//        fake3.location = [[SGPoint alloc] initWithX:10 AndY:10];
+        FakeBlock *fake = [[FakeBlock alloc] init];
+        fake.location = [[SGPoint alloc] initWithX:0 AndY:0];
+        fake.color = UIColor.redColor;
+        
+        FakeBlock *fake1 = [[FakeBlock alloc] init];
+        fake1.location = [[SGPoint alloc] initWithX:0 AndY:19];
+        fake1.color = UIColor.redColor;
+        
+        FakeBlock *fake2 = [[FakeBlock alloc] init];
+        fake2.location = [[SGPoint alloc] initWithX:19 AndY:0];
+        fake2.color = UIColor.redColor;
+        
+        FakeBlock *fake3 = [[FakeBlock alloc] init];
+        fake3.location = [[SGPoint alloc] initWithX:19 AndY:19];
+        fake3.color = UIColor.redColor;
+//        return @[fake,fake1,fake2,fake3];
         return @[self.snake,self.fruit];
     }
     return nil;

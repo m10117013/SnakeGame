@@ -13,7 +13,7 @@
 
 - (void)drawInConent:(CGContextRef)context withSpace:(SGSpaceContext*)spaceArea {
     
-    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
     
     CGContextSetLineWidth(context, spaceArea.squareWidth);
 

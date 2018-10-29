@@ -26,6 +26,11 @@
 @interface SnakeGameMenuView : UIView
 
 /**
+ start button
+ */
+@property (strong, nonatomic) UIButton *startButton;
+
+/**
  delegate
  */
 @property (weak, nonatomic) id<SnakeGameMenuViewDelegate> delegate;

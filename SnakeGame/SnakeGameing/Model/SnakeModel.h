@@ -71,7 +71,7 @@ typedef enum : NSUInteger {
 - (BOOL)isHeadOnPoint:(SGPoint*)point;
 
 /**
- return YES if point on sanke body or head
+ return YES if point on snake body or head
 
  @param point SGPoint
  @return YES or NO

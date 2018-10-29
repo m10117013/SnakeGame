@@ -40,6 +40,8 @@
 		B6088C922176FA4E00E5ED7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6088C902176FA4E00E5ED7A /* LaunchScreen.storyboard */; };
 		B6088C952176FA4E00E5ED7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6088C942176FA4E00E5ED7A /* main.m */; };
 		B6088CA12176FB0A00E5ED7A /* SGSpaceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6088CA02176FB0A00E5ED7A /* SGSpaceItem.m */; };
+		B609628A218063D100C4CF2A /* ScoreMultiplePlayerBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6096289218063D100C4CF2A /* ScoreMultiplePlayerBoardView.m */; };
+		B62660E8217FE4150094E854 /* SnakeGameMultiplePlayerMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B62660E7217FE4150094E854 /* SnakeGameMultiplePlayerMenuView.m */; };
 		B6EEB5B1217C61D600EEDA4D /* FruitModelTester.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EEB5B0217C61D600EEDA4D /* FruitModelTester.m */; };
 		B6EEB5B2217C622400EEDA4D /* FruitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B6079ADA21784A6D00238846 /* FruitModel.m */; };
 /* End PBXBuildFile section */
@@ -122,6 +124,10 @@
 		B6088C942176FA4E00E5ED7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6088C9F2176FB0A00E5ED7A /* SGSpaceItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGSpaceItem.h; sourceTree = "<group>"; };
 		B6088CA02176FB0A00E5ED7A /* SGSpaceItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGSpaceItem.m; sourceTree = "<group>"; };
+		B6096288218063D100C4CF2A /* ScoreMultiplePlayerBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreMultiplePlayerBoardView.h; sourceTree = "<group>"; };
+		B6096289218063D100C4CF2A /* ScoreMultiplePlayerBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreMultiplePlayerBoardView.m; sourceTree = "<group>"; };
+		B62660E6217FE4150094E854 /* SnakeGameMultiplePlayerMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeGameMultiplePlayerMenuView.h; sourceTree = "<group>"; };
+		B62660E7217FE4150094E854 /* SnakeGameMultiplePlayerMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeGameMultiplePlayerMenuView.m; sourceTree = "<group>"; };
 		B6EEB5B0217C61D600EEDA4D /* FruitModelTester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FruitModelTester.m; sourceTree = "<group>"; };
 		EAC064DD9B6B36EE3B0FF077 /* Pods-SnakeGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnakeGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnakeGameTests/Pods-SnakeGameTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -313,6 +319,10 @@
 				B60467832179C40800FC7EF4 /* ScoreBoardView.m */,
 				B6028483217AF393004A7BE1 /* SnakeGameMenuView.h */,
 				B6028484217AF393004A7BE1 /* SnakeGameMenuView.m */,
+				B62660E6217FE4150094E854 /* SnakeGameMultiplePlayerMenuView.h */,
+				B62660E7217FE4150094E854 /* SnakeGameMultiplePlayerMenuView.m */,
+				B6096288218063D100C4CF2A /* ScoreMultiplePlayerBoardView.h */,
+				B6096289218063D100C4CF2A /* ScoreMultiplePlayerBoardView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -540,6 +550,8 @@
 				B6079ABC2177968400238846 /* FakeBlock.m in Sources */,
 				B6079AD8217843AC00238846 /* SnakeModel+Drawable.m in Sources */,
 				B60467842179C40800FC7EF4 /* ScoreBoardView.m in Sources */,
+				B62660E8217FE4150094E854 /* SnakeGameMultiplePlayerMenuView.m in Sources */,
+				B609628A218063D100C4CF2A /* ScoreMultiplePlayerBoardView.m in Sources */,
 				B6079AD521783BE600238846 /* SGPoint.m in Sources */,
 				B6088CA12176FB0A00E5ED7A /* SGSpaceItem.m in Sources */,
 				B6079AB8217775DA00238846 /* SnakeGameBoardView.m in Sources */,
