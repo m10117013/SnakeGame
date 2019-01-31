@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/m10117013/SnakeGame.svg?branch=master)](https://travis-ci.com/m10117013/SnakeGame)
 
+<img src="./resource/snakeGame.gif" width="260" height="480" />
+
 | dependency |
 |---|
 | specta |
